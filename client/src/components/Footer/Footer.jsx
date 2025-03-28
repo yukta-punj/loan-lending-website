@@ -21,21 +21,6 @@ const links = [
     { name: "About Us", link: "/about" },
 ];
 
-// FooterLinks Component
-const FooterLinks = ({ links }) => {
-    return (
-        <ul className="flex flex-col gap-3">
-            {links.map((item, index) => (
-                <li key={index}>
-                    <a href={item.link} className="hover:text-gray-300">
-                        {item.name}
-                    </a>
-                </li>
-            ))}
-        </ul>
-    );
-};
-
 const Footer = () => {
     return (
         <footer className="bg-white dark:bg-gray-900">
@@ -59,12 +44,12 @@ const Footer = () => {
                                 </a>
                             </li>
                             <li>
-                                <a href="#about" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
+                                <a href="/about" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
                                     About Us
                                 </a>
                             </li>
                             <li>
-                                <a href="#services" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
+                                <a href="/services" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
                                     Services
                                 </a>
                             </li>
@@ -80,25 +65,17 @@ const Footer = () => {
                     <div>
                         <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Our Services</h3>
                         <ul className="space-y-2">
-                            <li>
-                                <a href="#home-loans" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
+                            <li className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
                                     Home Loans
-                                </a>
                             </li>
-                            <li>
-                                <a href="#personal-loans" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
+                            <li className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
                                     Personal Loans
-                                </a>
                             </li>
-                            <li>
-                                <a href="#business-loans" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
+                            <li className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
                                     Business Loans
-                                </a>
                             </li>
-                            <li>
-                                <a href="#education-loans" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
+                            <li className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
                                     Education Loans
-                                </a>
                             </li>
                         </ul>
                     </div>
