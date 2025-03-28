@@ -1,0 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 255, 255, 255;
+}
+
+.dark {
+  --foreground-rgb: 255, 255, 255;
+  --background-rgb: 17, 24, 39;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark mode styles for form elements */
+.dark input,
+.dark select,
+.dark textarea {
+  background-color: #1f2937;
+  border-color: #374151;
+  color: #ffffff;
+}
+
+.dark input:focus,
+.dark select:focus,
+.dark textarea:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 1px #7c3aed;
+}
+
+/* Dark mode styles for buttons */
+.dark .btn-primary {
+  background-color: #7c3aed;
+  color: #ffffff;
+}
+
+.dark .btn-primary:hover {
+  background-color: #6d28d9;
+}
+
+/* Dark mode styles for cards */
+.dark .card {
+  background-color: #1f2937;
+  border-color: #374151;
+}
+
+/* Dark mode styles for modals */
+.dark .modal {
+  background-color: #1f2937;
+  border-color: #374151;
+}
+
+/* Dark mode styles for tables */
+.dark table {
+  background-color: #1f2937;
+  color: #ffffff;
+}
+
+.dark th,
+.dark td {
+  border-color: #374151;
+}
+
+/* Dark mode styles for links */
+.dark a {
+  color: #7c3aed;
+}
+
+.dark a:hover {
+  color: #6d28d9;
+}
+
+/* Dark mode styles for headings */
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6 {
+  color: #ffffff;
+}
+
+/* Dark mode styles for paragraphs */
+.dark p {
+  color: #d1d5db;
+}
+
+/* Dark mode styles for lists */
+.dark ul,
+.dark ol {
+  color: #d1d5db;
+}
+
+/* Dark mode styles for code blocks */
+.dark pre,
+.dark code {
+  background-color: #111827;
+  color: #d1d5db;
+}
+
+/* Dark mode styles for blockquotes */
+.dark blockquote {
+  border-color: #374151;
+  color: #d1d5db;
+}
+
+/* Dark mode styles for dividers */
+.dark hr {
+  border-color: #374151;
+}
+
+/* Dark mode styles for tooltips */
+.dark .tooltip {
+  background-color: #1f2937;
+  color: #ffffff;
+  border-color: #374151;
+}
+
+/* Dark mode styles for dropdowns */
+.dark .dropdown {
+  background-color: #1f2937;
+  border-color: #374151;
+}
+
+.dark .dropdown-item {
+  color: #ffffff;
+}
+
+.dark .dropdown-item:hover {
+  background-color: #374151;
+}
+
+/* Dark mode styles for alerts */
+.dark .alert {
+  background-color: #1f2937;
+  border-color: #374151;
+  color: #ffffff;
+}
+
+.dark .alert-success {
+  background-color: #065f46;
+  border-color: #047857;
+}
+
+.dark .alert-error {
+  background-color: #991b1b;
+  border-color: #b91c1c;
+}
+
+.dark .alert-warning {
+  background-color: #92400e;
+  border-color: #b45309;
+}
+
+.dark .alert-info {
+  background-color: #1e40af;
+  border-color: #1e3a8a;
+}
+
+@layer utilities {
+    .btn-primary {
+        @apply rounded-md border-2 border-primary bg-primary px-4 py-2 text-sm text-white transition-colors duration-300 hover:bg-primary/80;
+    }
+    .btn-outline {
+        @apply rounded-md border-2 border-white px-4 py-2 text-sm text-white transition-colors duration-300;
+    }
+    .btn-square {
+        @apply w-[50px] h-[50px] p-2 border-[1px] border-slate-300 rounded-md bg-gray-200 dark:bg-gray-900;
+    }
+}

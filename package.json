@@ -1,0 +1,17 @@
+{
+  "name": "loan-lending-website",
+  "version": "1.0.0",
+  "description": "Loan Lending Website",
+  "scripts": {
+    "start": "cd client && npm run dev",
+    "server": "cd server && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run start\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "twilio": "^5.5.0",
+    "vite": "^6.2.3"
+  }
+}
