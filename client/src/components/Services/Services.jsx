@@ -181,13 +181,6 @@ const Services = () => {
                     <p className="text-gray-600 dark:text-gray-300">{service.eligibility}</p>
                   </div>
                 </div>
-
-                <button
-                  onClick={() => navigate('/services')}
-                  className={`w-full bg-${service.color}-600 text-white py-2 rounded-lg hover:bg-${service.color}-700 transition-colors duration-200 mt-4`}
-                >
-                  Learn More
-                </button>
               </div>
             </motion.div>
           ))}
