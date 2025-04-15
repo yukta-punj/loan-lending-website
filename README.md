@@ -137,6 +137,6 @@ loan-lending-website/
 
 
 ## Contact
-Your Name - [btbts22039_yukta@banasthali.in]
+Your Name - [punjyukta@gmail.com]
 
 Project Link: [https://github.com/yukta-punj/loan-lending-website] 
